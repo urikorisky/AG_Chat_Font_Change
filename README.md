@@ -1,2 +1,9 @@
-# AG_Chat_Font_Change
-An automated layout-aware patcher and comprehensive guide to increase the agent chat font size in Google AntiGravity (tested on v2.12.2) on Windows.
+# Google AntiGravity Font Sizer
+
+A lightweight utility workspace designed to fix the uncomfortably small text scaling layout inside the Google AntiGravity (v2.12.2) desktop client on Windows. 
+
+Because AntiGravity compiles its UI using dynamic class name obfuscation and renders everything through a monolithic local web canvas thread, native CSS stylesheet overrides or screen geometric trackers break when sidebars shrink or code views expand. This repository offers a structural-aware solution that continuously intercepts DOM mutations—upscaling central agent workspace typography to a clean 16px while cleanly isolating and protecting code editors (`monaco-editor`) and core application layout panels.
+
+### Repository Contents
+* `README.md` / `GUIDE.md`: Comprehensive walkthrough covering manual architecture overrides.
+* `patch_antigravity_font.bat`: A fully automated, one-click shell utility that handles environment verification, archive unpacking, source string patching, and distribution rebuilds.
